@@ -142,7 +142,6 @@
   font-size: 18px;
   color: var(--background-color);
   background-color: var(--neon-text-color);
-  margin-top: var(--margin-before-title-main);
   letter-spacing: 0;
   line-height: 23.4px;
   margin-top: var(--margin-text-decor);
@@ -355,8 +354,6 @@
   }
 
   .header__theme-menu-list {
-    gap: 10px;
-    display: flex;
     flex-direction: row;
   }
 
