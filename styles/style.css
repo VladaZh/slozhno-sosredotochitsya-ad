@@ -342,3 +342,55 @@
     justify-content: center;
   }
 }
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    margin-top: 20px;
+  }
+
+  .header__theme-menu-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text {
+    height: 71px;
+    width: 491px;
+  }
+
+  .section-why {
+    height: 508px;
+  }
+
+  .main-title {
+    width: 315px;
+    height: 47px;
+  }
+
+  .article-text-left {
+    width: 649px;
+    height: min-content;
+  }
+
+  .chapters-what {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 498px;
+  }
+
+  .how-section {
+    margin-top: 13px;
+    height: 1015px;
+  }
+
+  .image-section {
+    height: 1091px;
+  }
+
+  .footer {
+    height: 768px;
+  }
+}
