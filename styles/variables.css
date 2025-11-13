@@ -3,5 +3,14 @@
   --background-color: #000028;
   --neon-text-color: #FF0070;
   --title-color: #DB00FF;
-  --border-hover-color: rgba(255, 0, 112, 0.4);;
+  --border-hover-color: rgba(255, 0, 112, 0.4);
+  --margin-top-main: 40px;
+  --margin-left-right-main: 10px;
+  --margin-before-title-main: 20px
+  --margin-title: 20px;
+  --article-text-color: #F1B2CE;
+  --margin-text-decor: 20px;
+  --margin-article-text: 9px;
+  --margin-section: 49px;
+  --margin-image-section: 30px;
 }
