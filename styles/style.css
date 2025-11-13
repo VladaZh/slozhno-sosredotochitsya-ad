@@ -175,7 +175,6 @@
 
 .image-section {
   margin-top: var(--margin-image-section);
-  
   display: grid;
 }
 
@@ -192,4 +191,154 @@
   align-items: center;
   position: relative;
   margin-top: var(--margin-footer);
+}
+
+@media (width >= 768px) {
+  :root {
+    --margin-section: 80px;
+    --margin-top-main: 60px;
+    --margin-left-right-main: 20px;
+  }
+  .rec {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::before {
+  right: 20px;
+  top: 20px;
+}
+
+.decorated-zone::after {
+  left: 20px;
+  bottom: 20px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  margin-right: 20px;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 83%;
+}
+
+  .text {
+    width: 364px;
+    justify-self: end;
+    margin-right: 20px;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content min-content;
+    gap: 20px;
+  }
+
+  .section-why {
+    max-height: 648px;
+  }
+
+  .main-title {
+    grid-column: 1;
+  }
+
+  .title-decor {
+    margin-top: 0;
+    max-height: 23.4px;
+  }
+
+  .chapters {
+    grid-column-start: 2;
+  }
+
+  .chapters-item {
+    margin-bottom: 20px;
+    align-content: space-between;
+  }
+
+  .chapters-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .what-section {
+    margin-top: var(--margin-section);
+    max-height: 675px;
+  }
+
+  .main-title {
+    width: 236px;
+  }
+
+  .chapters-what {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .how-section {
+    margin-top: var(--margin-section);
+    max-height: 1296px;
+  }
+
+  .how-title {
+    margin-bottom: 20px;
+  }
+
+  .image-section {
+    margin-top: var(--margin-section);
+    display: block;
+    height: 823px;
+  }
+
+  .images {
+    display: grid;
+    gap: 20px;
+    height: 780px;
+    margin-top: 15px;
+    grid-template-areas: "image-top-left image-top-left image-top-right"
+    "image-bottom-left image-center image-top-right"
+    "image-bottom-left image-bottom-right image-bottom-right";
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .picturies-img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .image-top-left {
+    grid-area: image-top-left;
+  }
+
+  .image-top-right {
+    grid-area: image-top-right;
+  }
+
+  .image-bottom-left {
+    grid-area: image-bottom-left;
+  }
+
+  .image-bottom-right {
+    grid-area: image-bottom-right;
+  }
+
+  .image-center {
+    grid-area: image-center;
+  }
+
+  .footer {
+    margin-top: var(--margin-top-main);
+    display: flex;
+    justify-content: center;
+  }
 }
