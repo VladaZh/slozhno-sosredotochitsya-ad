@@ -173,6 +173,10 @@
   grid-template-rows: repeat(5, min-content);
 }
 
+.subtitle {
+  font-weight: normal;
+}
+
 .image-section {
   margin-top: var(--margin-image-section);
   display: grid;
