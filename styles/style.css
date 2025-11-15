@@ -123,6 +123,21 @@
   margin-right: var(--margin-left-right-main);
 }
 
+.link {
+  text-shadow: 2px 2px 0 var(--neon-text-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  outline: none;
+  border-bottom: 1px solid var(--article-text-color);
+}
+
+.link:focus-visible {
+  outline: none;
+  border: 1px solid var(--article-text-color);
+}
+
 .main-title {
   color: var(--neon-text-color);
   font-weight: 700;
@@ -371,7 +386,6 @@
   }
 
   .article-text-left {
-    width: 649px;
     height: min-content;
   }
 
